@@ -30,7 +30,7 @@ pip install -r requirements.txt
 ```
 3. Set up Twitter API Credentials
 
-Create a `config.py` file with the following content:
+  Create a `config.py` file with the following content:
 
 ```bash
 consumer_key = 'YOUR_CONSUMER_KEY'
