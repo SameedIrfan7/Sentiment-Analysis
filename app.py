@@ -16,10 +16,10 @@ app = Flask(__name__)
 cache = Cache(app, config={'CACHE_TYPE': 'simple'})
 
 # Twitter API credentials
-consumer_key = "jXgE7yj8ngdDGGjTZYtFK8BCn"
-consumer_secret = "jtxltGQvu07A2LYUyNdNC4f0kyo8LJcrNPLWvrScaPnt4EDWmi"
-access_token = "1604667419242696704-0yUqKl20G9RaHrQ6wcM9ul8EuCrzoK"
-access_token_secret = "CnsCz4obMXosQP9V1PwfiU7uWj3HKMRyw0I7xKiEPxCV4"
+consumer_key = ""
+consumer_secret = ""
+access_token = ""
+access_token_secret = ""
 
 # Authenticate with Twitter API
 auth = OAuthHandler(consumer_key, consumer_secret)
