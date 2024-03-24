@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sentiment Analysis</title>
+    <style>
+        body {
+            background-color: #000000; /* Black background color */
+            color: #ffffff; /* White text color */
+            font-family: Arial, sans-serif;
+        }
+        h1 {
+            text-align: center;
+        }
+        form {
+            margin: 0 auto;
+            width: 300px;
+            padding: 20px;
+            background-color: #333333; /* Dark grey background color */
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Box shadow for a raised effect */
+        }
+        label {
+            display: block;
+            margin-bottom: 10px;
+        }
+        input[type="text"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ffffff; /* White border */
+            border-radius: 5px;
+            background-color: #555555; /* Medium grey background color */
+            color: #ffffff; /* White text color */
+        }
+        input[type="submit"] {
+            width: 100%;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            background-color: #007bff; /* Blue submit button color */
+            color: #ffffff; /* White text color */
+            cursor: pointer;
+            transition: background-color 0.3s; /* Smooth transition for hover effect */
+        }
+        input[type="submit"]:hover {
+            background-color: #0056b3; /* Darker blue color on hover */
+        }
+        #result {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Sentiment Analysis</h1>
+    <form action="/predict_sentiment" method="post">
+        <label for="text_input">Enter text: </label>
+        <input type="text" id="text_input" name="text">
+        <input type="submit" value="Submit">
+    </form>
+    <p id="result"></p>
+</body>
+</html>
